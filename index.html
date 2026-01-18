@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blitz GFX Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    span {
+      color: red;
+    }
+
+    p.description {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: #111;
+      padding: 25px;
+      max-width: 300px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .gfx-image {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .price {
+      color: red;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .discord-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 15px 30px;
+      background: red;
+      color: white;
+      font-size: 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .discord-button:hover {
+      background: darkred;
+    }
+
+    @media (max-width: 950px) {
+      .cards {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Blitz <span>GFX</span> Shop</h1>
+    <p class="description">Aggressive & trending Roblox GFX</p>
+
+    <div class="cards">
+      <!-- Normal GFX Card -->
+      <div class="card">
+        <img src="images/normal.png" alt="Normal GFX" class="gfx-image">
+        <h2>Normal GFX</h2>
+        <p class="price">30–40 Robux</p>
+        <p>No accessories<br>No fabric</p>
+      </div>
+
+      <!-- Medium GFX Card -->
+      <div class="card">
+        <img src="images/medium.png" alt="Medium GFX" class="gfx-image">
+        <h2>Medium GFX</h2>
+        <p class="price">50–60 Robux</p>
+        <p>Accessories of our choice<br>No fabric</p>
+      </div>
+
+      <!-- Pro GFX Card -->
+      <div class="card">
+        <img src="images/pro.png" alt="Pro GFX" class="gfx-image">
+        <h2>Pro GFX</h2>
+        <p class="price">70–80 Robux</p>
+        <p>Accessories of our choice<br>Custom glove/hand tape color<br>Fabric</p>
+      </div>
+    </div>
+
+    <!-- Discord Button -->
+    <a href="https://discord.gg/YOUR_SERVER_CODE" target="_blank" class="discord-button">Order via Discord</a>
+  </div>
+</body>
+</html>
